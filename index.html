@@ -8,8 +8,6 @@ $obj = new main();
 $name = "south mountain";
 $obj=>printthis($name);
 
-$array = array(a,b,c,d,e,f);
-$obj=>printArray($array;)
 
 class main{
 public function printthis($name) {
@@ -80,6 +78,73 @@ $str = "I like mango so much.";
 print_r (explode(" ",$str));
 echo '<hr>';
 }
+
+
+public function printArray() {
+echo '<h1>print function</h1>';
+$Hi = array('Hello','World!','I','love','NJIT');
+print ($hi);
+echo '<hr>';
+}
+
+public function implode() {
+echo '<h1>return a string</h1>';
+echo implode(" ",$Hi);
+echo '<hr>';
+}
+
+echo '<h1>add a value to the end</h1>'
+$number = array('2','4','6','8');
+$number[] = '10';
+echo $number;
+echo '<hr>';
+
+
+echo '<h1>get values from an array</h1>';
+$number1 = $number[0];
+echo ($number1);
+echo '<hr>';
+
+echo '<h1>output the greatest number</h1>';
+echo(max(2,4,6,8,10) . "<br>");
+echo '<hr>';
+
+echo '<h1>computing the sum and average</h1>';
+$price = array(20,36,78,60);
+$sum = 0;
+for ($i = 0; $i < count($price); $i++ {$sum += $price[$i];
+}$average = $sum / count($price);
+echo ($average);
+echo '<hr>';
+
+echo '<h1>set a value</h1>';
+$name = array('first' => 'Allen', 'last' => 'George');
+$name['middle'] = 'Thomas';
+echo ($name);
+echo '<hr>';
+
+echo '<h1>remove numbers from an array</h1>';
+$numbers = array(1,2,3,4,5,6);
+unset ($numbers[2], $numbers[3]);
+echo ($number);
+echo '<hr>';
+
+echo '<h1>creat an array with a range</h1>';
+$number = range(2, 8, 4);
+echo ($number);
+echo '<hr>';
+
+echo '<h1> fill an array</h1>';
+$numbers = array_fill(0, 4, 2);
+echo ($numbers);
+echo '<hr>';
+
+echo '<h1>merge two array</h1>;'
+$student1 = array('Sara', 'Max');
+$student2 = array('Helen', 'Amy');
+$student = array_merge($student1, $student2);
+print_r($student);
+echo '<hr>';
 }
 
 ?>
