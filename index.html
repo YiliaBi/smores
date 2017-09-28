@@ -4,53 +4,85 @@
  
 <?php
 
-echo strlen("south mountain");
-echo '<hr>'
+$obj = new main();
+$name = "south mountain";
+$obj=>printthis($name);
 
+$array = array(a,b,c,d,e,f);
+$obj=>printArray($array;)
+
+class main{
+public function printthis($name) {
+echo '<h1>print function</h1>';
+print($name);
+echo '<hr>';
+}
+
+public function strlen() {
+echo '<h1>Get string length</h1>;
+echo strlen("south mountain");
+echo '<hr>';
+}
+
+public function htmlentities() {
+echo '<h1>Convert all applicable characters to HTML entities</h1>';
 $str = "<? sch????>";
 echo htmlentities($str);
+echo '<hr>';
+}
 
-echo '<hr>'
-
-
-$name = "south mountain";
+public function substr() {
+echo '<h1>Return part of a string</h1>';
 $town_name = substr($name, 0, 5);
 echo '<hr>';
+}
 
-$name ="Washington George";
-$i = strpos($name, 'George');
+public function strpos() {
+echo '<h1>'Find the position of the first occurrence of a substring in a
+string</h1>;
+$i = strpos($name, 'mountain');
 echo '<hr>';
+}
 
-$name = '  Sara harris  ';
-$name = ltrim($name);
+public function ltrim() {
+echo '<h1>Strip whitespace from the beginning of a strin</h1>;'
+$text = '  Sara harris  ';
+$text = ltrim($text);
 echo '<hr>';
+}
 
-
-$Hi = array('Hello','World!','I','love','NJIT');
-echo implode(" ",$Hi);
-
-Print_r (explode(" ",$Hi);
-
-echo '<hr>';
-
-echo(max(2,4,6,8,10) . "<br>");
-echo '<hr>';
-
-
+public function str_shuffle() {
+echo '<h1>Randomly shuffles a string</h1>';
 $str = 'abcdefg';
 echo $str;
 $shuffled = str_shuffle($str);
-
 echo $shuffled;
-
+echo '<hr>';
+}
+public function round() {
+echo '<h1>rounds the floating-point number'</h1>';
 echo(round(0.60) . "<br>");
 echo(round(0.50) . "<br>");
-
 echo '<hr>';
+}
 
 
-$array_name = $
+public function number_format() {
+echo '<h1>Format the  number with grouped thousands</h1>';
+$salary = '390050000';
+echo $number_format($salary);
+echo '<hr>';
+}
 
+public function explode() {
+echo '<h1>Split the string </h1>';
+$str = "I like mango so much.";
+print_r (explode(" ",$str));
+echo '<hr>';
+}
+}
+
+?>
 </body>
 </html>
 
